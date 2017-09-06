@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Paquete</title>
+</head>
+<body>
+    <div> 
+        @{
+            string accion = ViewBag.subaccion;
+            switch (accion)
+            {
+                case "Index":
+                    // Use the text block below to separate html elements from code
+                    <text>
+                        <h1>Index</h1>
+                    </text>
+                    break;  // Always break each case
+                case "Nuevo":
+                    <text>
+                        <h1>Nuevo</h1>
+                    </text>
+                    break;
+                case "Eliminar":
+                    <text>
+                        <h1>Eliminar</h1>
+                    </text>
+                    break;
+                default:
+                    <text>
+                        <h1>WTF WEB3</h1>
+                    </text>
+                    break;
+            }
+        }
+    </div>
+</body>
+</html>
